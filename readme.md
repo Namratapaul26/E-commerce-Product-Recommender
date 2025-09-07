@@ -12,38 +12,38 @@ This repository contains a Python-based eCommerce product recommendation system.
 
 - Python 3.8+
 - Required libraries (install via `requirements.txt`):
-    - pandas
-    - numpy
-    - scikit-learn
-    - matplotlib
+     - pandas
+     - numpy
+     - scikit-learn
+     - matplotlib
 
 ## Installation
 
 1. Clone the repository:
-     ```bash
-     git clone https://github.com/yourusername/eCommerce_Product_Recommender.git
-     cd eCommerce_Product_Recommender
-     ```
+      ```bash
+      git clone https://github.com/yourusername/eCommerce_Product_Recommender.git
+      cd eCommerce_Product_Recommender
+      ```
 
 2. Install dependencies:
-     ```bash
-     pip install -r requirements.txt
-     ```
+      ```bash
+      pip install -r requirements.txt
+      ```
 
 ## Usage
 
-1. Prepare your dataset in CSV format.
-2. Update the configuration in `code.py` to point to your dataset.
+1. Ensure your dataset is named `clean_data.csv` and placed in the `data/` directory.
+2. Update the configuration in `recommendation_code.py` to point to your dataset if necessary.
 3. Run the script:
-     ```bash
-     python code.py
-     ```
+      ```bash
+      python recommendation_code.py
+      ```
 
 ## File Overview
 
-- **code.py**: Main script containing the recommendation logic.
+- **recommendation_code.py**: Main script containing the recommendation logic.
 - **requirements.txt**: List of dependencies.
-- **data/**: Directory to store datasets (not included in the repository).
+- **data/**: Directory to store datasets (includes `clean_data.csv` as a sample dataset).
 
 ## Example
 
@@ -51,7 +51,7 @@ This repository contains a Python-based eCommerce product recommendation system.
 from recommender import Recommender
 
 # Initialize the recommender system
-recommender = Recommender(data_path="data/products.csv")
+recommender = Recommender(data_path="data/clean_data.csv")
 
 # Generate recommendations for a user
 user_id = 123
